@@ -10,6 +10,7 @@ gem 'devise'
 gem 'devise_token_auth'
 gem 'rack-cors'
 gem 'letter_opener', '~> 1.4.1'
+# , :group => :development
 # Uploads
 gem 'carrierwave'
 gem 'fog', require: 'fog/aws'

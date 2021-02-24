@@ -4,6 +4,8 @@ class UserMailer < ApplicationMailer
     @user_name = "#{register_params[:first_name]} #{register_params[:last_name]}"
     @password = register_params[:password]
     @email = register_params[:email]
+    logger.info "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: #{@email}"
+
     mail(to: @email, subject: 'Register User')
   end
 
